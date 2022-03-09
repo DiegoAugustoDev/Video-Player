@@ -1,0 +1,101 @@
+.container{
+    position: relative;
+    width: 640px;
+    height: 360px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+body{
+    background-color: rgb(212, 239, 208);
+}
+
+#rodape{
+    text-align: center;
+    margin-top: 55px;
+}
+
+#icon{
+    width: 50px;
+    position: relative;
+    bottom: 62px;
+    left: 267px;
+}
+
+.video{
+    width: 100%;
+}
+
+.video:hover{
+    overflow: hidden;
+}
+
+
+.control{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.btn{
+    position: relative;
+    top: 100%;
+    padding: 10px;
+    transform: translateY(-190%);
+    background:none;
+    border: none;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: white;
+}
+
+#progressBarContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 85%;
+   
+}
+
+#progressBarContainer #progressBar {
+    padding: 0;
+    height: 5px;
+    left: 0;
+    background: #ff0000;
+    position: absolute;
+    bottom: 101%;
+}
+
+#progressBarContainer #inputProgressBar {
+    position: absolute;
+    bottom: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 7px;
+    width: 100%;
+    background: #a6a6a6BB;
+    left: -2px;
+}
+
+#progressBarContainer #inputProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    padding: 0;
+    opacity: 0%;
+    height: 15px;
+    transition: 500ms;
+    border-radius: 50px;
+    background:  #ff0000;
+    cursor: pointer;
+}
+
+#progressBarContainer #inputProgressBar:hover::-webkit-slider-thumb {
+    opacity: 100%;
+}
